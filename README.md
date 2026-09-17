@@ -308,7 +308,7 @@ Apache-2.0 仅覆盖贡献者创作的代码、文档、schema 和其他原创�
 python scripts/check_publication_safety.py
 ```
 
-详细政策见 `docs/copyright-and-data-policy.md`。引用本项目不替代引用原始论文；仓库 URL 发布前需在 `CITATION.cff` 中替换占位 owner。
+详细政策见 `docs/copyright-and-data-policy.md`。引用本项目不替代引用原始论文。
 
 ## 文档入口
 
