@@ -1,5 +1,7 @@
 # Atmospheric Science Research Skills
 
+![Atmospheric Science Research Skills: evidence-first workflows for AI agents](assets/atmospheric-science-research-skills-hero.png)
+
 [English](#english) | [中文](#中文)
 
 ## English
