@@ -48,6 +48,28 @@ dependence, and uncertainty in an ensemble forecast evaluation.
 Use $atmospheric-claim-audit to check every conclusion against its evidence.
 ```
 
+### Skill reference and minimal examples
+
+Use the main entry point when the request spans several research stages. Call a specialist directly when the desired output is narrow and already clear. The `$name` form works in Codex and other runtimes that support explicit Skill names; Claude Code may expose the same names as `/name`. In GitHub Copilot, paste the example as a natural-language Chat or agent-mode request.
+
+| Skill | When to use it | Minimal example |
+|---|---|---|
+| `$atmospheric-science-research` | End-to-end work that crosses literature, design, analysis, writing, or review. It routes to only the specialists needed. | `Use $atmospheric-science-research to plan an evidence-grounded study of urban effects on extreme rainfall.` |
+| `$atmospheric-literature-search` | Build or update a reproducible literature set; search multiple scholarly sources, deduplicate, screen, verify versions, and record access status. | `Use $atmospheric-literature-search to find 2020–present studies of aerosol–cloud interactions over East Asia and return a screened evidence table.` |
+| `$atmospheric-paper-reader` | Read supplied or lawfully acquired full text and extract atomic claims with page, section, table, equation, or figure locators. | `Use $atmospheric-paper-reader to extract the datasets, methods, findings, and limitations from these papers with exact source locators.` |
+| `$atmospheric-research-design` | Turn a question and verified evidence into hypotheses, variables, observations/simulations, validation, sensitivity tests, and a reproducible plan. | `Use $atmospheric-research-design to design an observational study of heatwave–ozone coupling, including confounders and validation.` |
+| `$atmospheric-statistical-analysis` | Design or audit statistics, causal inference, time-series/spatial methods, extremes, ML validation, or forecast verification. | `Use $atmospheric-statistical-analysis to audit this ensemble evaluation for CRPS, reliability, dependence, leakage, and uncertainty.` |
+| `$atmospheric-data-qc` | Check units, coordinates, calendars, timestamps, flags, missingness, aggregation, regridding, representativeness, and provenance before analysis. | `Use $atmospheric-data-qc to audit the harmonization of ERA5, station, and satellite precipitation data.` |
+| `$atmospheric-figure-analysis` | Interpret or audit maps, profiles, time series, tables, equations, captions, graphical integrity, and whether figures support the claims. | `Use $atmospheric-figure-analysis to assess what Figure 3 supports, its uncertainty, and any panel or caption inconsistencies.` |
+| `$atmospheric-model-experiment` | Design or audit NWP, WRF, CTM, climate, LES, or Earth-system experiments, including forcing, boundaries, spin-up, parameterizations, ensembles, and validation. | `Use $atmospheric-model-experiment to design WRF sensitivity experiments for urban convection without changing multiple factors at once.` |
+| `$atmospheric-extremes-attribution` | Analyze extreme-event definitions, return periods, trends, mechanisms, factual/counterfactual ensembles, risk ratios, and attribution strength. | `Use $atmospheric-extremes-attribution to audit whether this heatwave study supports a causal attribution claim.` |
+| `$atmospheric-composition-air-quality` | Work on atmospheric chemistry, aerosols, emissions, CTMs, PM/ozone, source apportionment, meteorological normalization, exposure, or health interpretation. | `Use $atmospheric-composition-air-quality to design a PM2.5 source-attribution study and identify exposure-error risks.` |
+| `$atmospheric-manuscript-writer` | Draft or revise manuscript sections from verified literature and user-owned methods/results; it must not invent results or citations. | `Use $atmospheric-manuscript-writer to draft the Methods from this protocol and Results from these supplied outputs only.` |
+| `$atmospheric-claim-audit` | Check abstracts, conclusions, reviews, and policy-facing statements against citations, scope, design, uncertainty, and causal strength. | `Use $atmospheric-claim-audit to label every conclusion as supported, overstated, contradicted, or unverifiable.` |
+| `$atmospheric-peer-review` | Produce a pre-submission audit, referee report, revision check, or response-to-reviewer assessment focused on validity and evidence. | `Use $atmospheric-peer-review to review this manuscript and separate major validity issues from optional improvements.` |
+
+The examples are starting points, not rigid commands. Add the study region, period, atmospheric scale, allowed sources, desired output, and any supplied data or papers. If a task needs current literature, the agent should search accessible scholarly services first and must not treat the bundled metadata as the final evidence base.
+
 Claude Code may also expose Skills as slash commands, for example `/atmospheric-science-research`. In Copilot, use the same natural-language requests in Chat or agent mode. Availability of Web of Science, Scopus, publisher full text, or other subscribed sources depends on the user's accounts and runtime; the Skills never bypass access controls.
 
 Validate a checkout with:
@@ -66,23 +88,27 @@ See the Chinese section below for detailed Windows/macOS/Linux installation, upd
 
 当前提供 13 个可安装 Skill。`atmospheric-science-research` 是轻量总入口，只负责理解研究目标、选择必要的任务型 Skill、维护证据链并整合交付，不重复专业 Skill 的详细流程。内置 3,000 条索引只用于离线演示、术语扩展与回归测试。
 
-## Skill 清单
+## Skill 命令与最小用法
 
-| Skill | 用途 |
-|---|---|
-| `atmospheric-science-research` | 轻量总入口：路由并整合完整科研工作流 |
-| `atmospheric-literature-search` | 实时检索、去重、筛选、版本与获取状态核验 |
-| `atmospheric-paper-reader` | 全文、公式、图表和方法阅读；原子证据抽取 |
-| `atmospheric-research-design` | 研究问题、假设、观测/模拟/混合方案与验证设计 |
-| `atmospheric-statistical-analysis` | 统计、因果、时空依赖、极值与机器学习审查 |
-| `atmospheric-data-qc` | 单位、时间、坐标、缺测、QC、重网格与数据谱系 |
-| `atmospheric-figure-analysis` | 地图、剖面、时间序列、表格、公式与图文一致性 |
-| `atmospheric-model-experiment` | WRF、NWP、CTM、气候和地球系统模式试验设计 |
-| `atmospheric-extremes-attribution` | 极端事件定义、重现期和事实/反事实归因 |
-| `atmospheric-composition-air-quality` | 化学、气溶胶、排放、源解析、暴露与空气质量 |
-| `atmospheric-manuscript-writer` | 基于已核验证据和真实结果撰写或修改 SCI |
-| `atmospheric-claim-audit` | 检查引文支持、范围、因果、归因和结论越界 |
-| `atmospheric-peer-review` | 投稿前审查、同行评审和修改回复质量检查 |
+跨越多个科研阶段时使用总入口；目标明确且单一时直接调用专业 Skill。Codex 等平台可使用 `$名称` 显式调用；Claude Code 也可能显示为 `/名称`；GitHub Copilot 中直接把示例作为 Chat 或 agent mode 的自然语言请求即可。
+
+| Skill | 何时使用 | 最小调用示例 |
+|---|---|---|
+| `$atmospheric-science-research` | 轻量总入口；任务横跨文献、研究设计、分析、写作或审查时，自动选择必要的专业 Skill。 | `使用 $atmospheric-science-research，规划一项城市化影响极端降水的证据驱动研究。` |
+| `$atmospheric-literature-search` | 从多个学术来源实时检索、去重、筛选、核验版本并记录全文获取状态。 | `使用 $atmospheric-literature-search，检索 2020 年以来东亚气溶胶—云相互作用研究，并输出可复现的筛选表。` |
+| `$atmospheric-paper-reader` | 深读用户提供或合法取得的全文，从正文、方法、公式、表格和图中抽取带定位的原子证据。 | `使用 $atmospheric-paper-reader，从这些论文提取数据、方法、发现和局限，并标明页码及图表号。` |
+| `$atmospheric-research-design` | 将问题与已核验证据转成假设、变量、观测/模拟方案、验证、敏感性分析和复现计划。 | `使用 $atmospheric-research-design，设计热浪—臭氧耦合观测研究，并处理混杂因素和验证。` |
+| `$atmospheric-statistical-analysis` | 设计或审查统计、因果、时空、极值、机器学习验证和预报检验。 | `使用 $atmospheric-statistical-analysis，检查集合预报评估中的 CRPS、可靠性、数据泄漏、依赖性和不确定性。` |
+| `$atmospheric-data-qc` | 分析前检查单位、坐标、日历、时间戳、质量标志、缺测、聚合、重网格、代表性和谱系。 | `使用 $atmospheric-data-qc，审查 ERA5、站点和卫星降水数据的统一处理方案。` |
+| `$atmospheric-figure-analysis` | 解读或审查地图、剖面、时间序列、表格、公式、图注和图文证据一致性。 | `使用 $atmospheric-figure-analysis，判断图 3 实际支持哪些结论、存在何种不确定性和面板不一致。` |
+| `$atmospheric-model-experiment` | 设计或审查 NWP、WRF、CTM、气候、LES 或地球系统模式的强迫、边界、spin-up、参数化、集合和验证。 | `使用 $atmospheric-model-experiment，设计城市对流的 WRF 敏感性试验，避免一次改变多个因素。` |
+| `$atmospheric-extremes-attribution` | 处理极端定义、重现期、趋势、机制、事实/反事实集合、风险比和归因强度。 | `使用 $atmospheric-extremes-attribution，审查该热浪研究是否足以支持因果归因。` |
+| `$atmospheric-composition-air-quality` | 处理大气化学、气溶胶、排放、CTM、PM/臭氧、源解析、气象归一化、暴露和健康解释。 | `使用 $atmospheric-composition-air-quality，设计 PM2.5 源解析研究并识别暴露误差风险。` |
+| `$atmospheric-manuscript-writer` | 仅依据已核验证据和用户真实方法/结果撰写或修改论文，不得虚构结果和引文。 | `使用 $atmospheric-manuscript-writer，只根据这份方案和已提供输出撰写 Methods 与 Results。` |
+| `$atmospheric-claim-audit` | 逐条检查摘要、结论、综述或政策陈述的引文支持、范围、设计、不确定性和因果强度。 | `使用 $atmospheric-claim-audit，把每条结论标记为有支持、过度表述、相互矛盾或无法核验。` |
+| `$atmospheric-peer-review` | 进行投稿前审查、同行评审、修订核查或回复审稿人检查，优先关注有效性和证据。 | `使用 $atmospheric-peer-review，审查这篇稿件，并区分重大有效性问题与可选改进。` |
+
+这些示例是起点而不是固定语法。可继续补充研究区域、时段、大气尺度、允许使用的来源、期望输出，以及已有数据或论文。需要当前文献时，代理应先检索实际可访问的学术来源，不能把仓库附带元数据当作最终证据库。
 
 ## 核心工作流
 
