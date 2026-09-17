@@ -1,0 +1,143 @@
+{
+  "schema": "atmospheric-corpus-phase1-final/1.0",
+  "finalized_at_utc": "2026-09-16T07:31:49.388666+00:00",
+  "selection_window": {
+    "from": "2016-01-01",
+    "to": "2025-12-31"
+  },
+  "journals": 30,
+  "selected_records": 3000,
+  "downloaded_verified": 1081,
+  "downloaded_bytes": 6793229256,
+  "status_counts": {
+    "downloaded_verified": 1081,
+    "skipped_final_no_direct_pdf": 1301,
+    "skipped_final_not_pdf": 23,
+    "skipped_final_download_failed": 595
+  },
+  "integrity_failures": [],
+  "per_journal": {
+    "Aerosol and Air Quality Research": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Atmospheric Chemistry and Physics": {
+      "selected": 100,
+      "downloaded_verified": 78
+    },
+    "Atmospheric Environment": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Atmospheric Measurement Techniques": {
+      "selected": 100,
+      "downloaded_verified": 80
+    },
+    "Atmospheric Pollution Research": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Atmospheric Research": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Atmospheric Science Letters": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Boundary-Layer Meteorology": {
+      "selected": 100,
+      "downloaded_verified": 42
+    },
+    "Bulletin of the American Meteorological Society": {
+      "selected": 100,
+      "downloaded_verified": 60
+    },
+    "Climate Dynamics": {
+      "selected": 100,
+      "downloaded_verified": 48
+    },
+    "Climate of the Past": {
+      "selected": 100,
+      "downloaded_verified": 82
+    },
+    "Earth System Dynamics": {
+      "selected": 100,
+      "downloaded_verified": 73
+    },
+    "Earth's Future": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Geophysical Research Letters": {
+      "selected": 100,
+      "downloaded_verified": 28
+    },
+    "Geoscientific Model Development": {
+      "selected": 100,
+      "downloaded_verified": 81
+    },
+    "International Journal of Climatology": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Journal of Applied Meteorology and Climatology": {
+      "selected": 100,
+      "downloaded_verified": 32
+    },
+    "Journal of Atmospheric and Oceanic Technology": {
+      "selected": 100,
+      "downloaded_verified": 33
+    },
+    "Journal of Climate": {
+      "selected": 100,
+      "downloaded_verified": 31
+    },
+    "Journal of Geophysical Research: Atmospheres": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Journal of Hydrometeorology": {
+      "selected": 100,
+      "downloaded_verified": 37
+    },
+    "Journal of the Atmospheric Sciences": {
+      "selected": 100,
+      "downloaded_verified": 23
+    },
+    "Meteorological Applications": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Monthly Weather Review": {
+      "selected": 100,
+      "downloaded_verified": 29
+    },
+    "Quarterly Journal of the Royal Meteorological Society": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Tellus B: Chemical and Physical Meteorology": {
+      "selected": 100,
+      "downloaded_verified": 10
+    },
+    "Theoretical and Applied Climatology": {
+      "selected": 100,
+      "downloaded_verified": 15
+    },
+    "Weather and Climate Dynamics": {
+      "selected": 100,
+      "downloaded_verified": 60
+    },
+    "Weather and Forecasting": {
+      "selected": 100,
+      "downloaded_verified": 42
+    },
+    "npj Climate and Atmospheric Science": {
+      "selected": 100,
+      "downloaded_verified": 97
+    }
+  },
+  "retry_policy": "frozen_by_user_request; skipped and failed items are terminal and must not be retried automatically",
+  "open_source_boundary": "metadata and scripts may be published; data/papers must not be committed"
+}

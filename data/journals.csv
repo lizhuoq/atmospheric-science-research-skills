@@ -1,0 +1,31 @@
+﻿rank,journal,abbrev,focus,source_id,issn_l,verification_status
+1,Bulletin of the American Meteorological Society,BAMS,broad synthesis and operations,https://openalex.org/S140302479,0003-0007,openalex_resolved
+2,Journal of Climate,JCLI,climate dynamics,https://openalex.org/S80591372,0894-8755,openalex_resolved
+3,Climate Dynamics,CD,climate dynamics and variability,https://openalex.org/S93478396,0930-7575,openalex_resolved
+4,Geophysical Research Letters,GRL,broad geophysical rapid communications,https://openalex.org/S36624081,0094-8276,openalex_resolved
+5,Journal of Geophysical Research: Atmospheres,JGR Atmospheres,atmospheric processes,https://openalex.org/S207178839,0148-0227,openalex_resolved
+6,Atmospheric Chemistry and Physics,ACP,atmospheric chemistry and aerosols,https://openalex.org/S162708223,1680-7316,openalex_resolved
+7,Earth's Future,Earth's Future,Earth system and climate impacts,https://openalex.org/S2764782578,2328-4277,openalex_resolved
+8,Earth System Dynamics,ESD,Earth system dynamics,https://openalex.org/S163739988,2190-4979,openalex_resolved
+9,Climate of the Past,CP,paleoclimate,https://openalex.org/S202457705,1814-9324,openalex_resolved
+10,npj Climate and Atmospheric Science,npj CAS,climate and atmospheric science,https://openalex.org/S4210224503,2397-3722,openalex_resolved
+11,Quarterly Journal of the Royal Meteorological Society,QJRMS,atmospheric science and NWP,https://openalex.org/S70522100,0035-9009,openalex_resolved
+12,Monthly Weather Review,MWR,weather analysis and forecasting,https://openalex.org/S90791864,0027-0644,openalex_resolved
+13,Journal of the Atmospheric Sciences,JAS,atmospheric dynamics and physics,https://openalex.org/S131264402,0022-4928,openalex_resolved
+14,Weather and Forecasting,WAF,operational forecasting,https://openalex.org/S203100778,0882-8156,openalex_resolved
+15,Journal of Applied Meteorology and Climatology,JAMC,applied meteorology and climatology,https://openalex.org/S89108927,1558-8424,openalex_resolved
+16,Journal of Hydrometeorology,JHM,hydrometeorology,https://openalex.org/S37844757,1525-7541,openalex_resolved
+17,Journal of Atmospheric and Oceanic Technology,JTECH,instruments observations and methods,https://openalex.org/S135937692,0739-0572,openalex_resolved
+18,Boundary-Layer Meteorology,BLM,boundary layer and turbulence,https://openalex.org/S28534307,0006-8314,openalex_resolved
+19,Atmospheric Environment,AE,air pollution and atmospheric environment,https://openalex.org/S4210198353,1352-2310,openalex_resolved
+20,Atmospheric Research,AR,cloud precipitation and atmospheric processes,https://openalex.org/S171488675,0169-8095,openalex_resolved
+21,Atmospheric Measurement Techniques,AMT,measurement and retrieval methods,https://openalex.org/S70769875,1867-1381,openalex_resolved
+22,Geoscientific Model Development,GMD,model development and evaluation,https://openalex.org/S60406085,1991-959X,openalex_resolved
+23,Weather and Climate Dynamics,WCD,weather and climate dynamics,https://openalex.org/S4210178013,2698-4016,openalex_resolved
+24,Atmospheric Science Letters,ASL,short atmospheric science communications,https://openalex.org/S165886213,1530-261X,openalex_resolved
+25,Atmospheric Pollution Research,APR,air pollution,https://openalex.org/S30869261,1309-1042,openalex_resolved
+26,Aerosol and Air Quality Research,AAQR,aerosols and air quality,https://openalex.org/S103097414,1680-8584,openalex_resolved
+27,Tellus B: Chemical and Physical Meteorology,Tellus B,atmospheric chemistry and physics,https://openalex.org/S169363509,0280-6509,openalex_resolved
+28,International Journal of Climatology,IJC,climatology,https://openalex.org/S32061424,0899-8418,openalex_resolved
+29,Theoretical and Applied Climatology,TAC,climatology and applications,https://openalex.org/S202078656,0066-6424,openalex_resolved
+30,Meteorological Applications,MA,applied meteorology,https://openalex.org/S75230789,1350-4827,openalex_resolved

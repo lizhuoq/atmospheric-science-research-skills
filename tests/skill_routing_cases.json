@@ -1,0 +1,17 @@
+[
+  {"id":"orchestrated-sci","prompt":"Help me plan and write an SCI paper on urban effects on extreme precipitation from a current literature review through claim audit.","expected":["atmospheric-science-research","atmospheric-literature-search","atmospheric-paper-reader","atmospheric-research-design","atmospheric-extremes-attribution","atmospheric-manuscript-writer","atmospheric-claim-audit"]},
+  {"id":"search","prompt":"Build a reproducible literature search with database queries, DOI deduplication, screening reasons and citation chasing.","expected":["atmospheric-literature-search"]},
+  {"id":"read","prompt":"Read these PDFs including methods, equations, figures and tables and extract claims with page locators.","expected":["atmospheric-paper-reader","atmospheric-figure-analysis"]},
+  {"id":"design","prompt":"Turn this hypothesis into an observational and modeling study with controls, validation and sensitivity tests.","expected":["atmospheric-research-design"]},
+  {"id":"statistics","prompt":"Audit spatial cross-validation, temporal leakage, autocorrelation, multiple testing and causal interpretation.","expected":["atmospheric-statistical-analysis"]},
+  {"id":"qc","prompt":"Harmonize ERA5 accumulations, station observations and satellite retrievals across units, UTC and grids.","expected":["atmospheric-data-qc"]},
+  {"id":"figure","prompt":"Review a multi-panel climate map for color scales, significance, area weighting, caption support and accessibility.","expected":["atmospheric-figure-analysis"]},
+  {"id":"model","prompt":"Design WRF control and sensitivity ensembles including parameterizations, spin-up, boundaries and budgets.","expected":["atmospheric-model-experiment"]},
+  {"id":"extremes","prompt":"Estimate heatwave return periods and attribute probability change using factual and counterfactual ensembles.","expected":["atmospheric-extremes-attribution"]},
+  {"id":"composition","prompt":"Audit a CTM and satellite PM2.5 exposure study including emissions, chemistry and health confounding.","expected":["atmospheric-composition-air-quality"]},
+  {"id":"forecast","prompt":"Compare ensemble precipitation forecasts by lead time, calibration, CRPS and skill against climatology.","expected":["atmospheric-statistical-analysis","atmospheric-data-qc"]},
+  {"id":"remote","prompt":"Design validation of a satellite AOD retrieval against AERONET with collocation and representativeness uncertainty.","expected":["atmospheric-research-design","atmospheric-data-qc","atmospheric-statistical-analysis"]},
+  {"id":"writing","prompt":"Draft Methods and Discussion from my real results and verified evidence without inventing missing values.","expected":["atmospheric-manuscript-writer"]},
+  {"id":"claims","prompt":"Check every abstract and conclusion claim against its citation, scope, uncertainty and causal strength.","expected":["atmospheric-claim-audit"]},
+  {"id":"review","prompt":"Produce a prioritized pre-submission peer review with evidence pointers and feasible revision paths.","expected":["atmospheric-peer-review"]}
+]

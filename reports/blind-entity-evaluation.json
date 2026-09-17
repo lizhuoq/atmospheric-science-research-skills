@@ -1,0 +1,68 @@
+{
+  "schema": "blind-entity-evaluation/1.0",
+  "generated_at_utc": "2026-09-17T04:39:51.263934+00:00",
+  "frozen_extractor": "entity-regex/1.0",
+  "blind_pdfs": 163,
+  "parsed": 155,
+  "parse_errors": 8,
+  "papers_with_at_least_one_entity": 101,
+  "coverage_among_parsed": 0.6516129032258065,
+  "entity_mentions": {
+    "CMIP5": 40,
+    "ECMWF": 37,
+    "ERA-Interim": 22,
+    "CMIP6": 19,
+    "WRF": 17,
+    "CESM": 15,
+    "MODIS": 14,
+    "ERA5": 13,
+    "TRMM": 12,
+    "GFS": 12,
+    "lidar": 10,
+    "radiosonde": 7,
+    "MERRA-2": 7,
+    "GPM": 5,
+    "CloudSat": 4,
+    "CALIPSO": 3,
+    "JRA-55": 3,
+    "Doppler radar": 3,
+    "AERONET": 3,
+    "eddy covariance": 1,
+    "WRF-Chem": 1
+  },
+  "errors": [
+    {
+      "doi": "https://doi.org/10.5194/cp-14-991-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-5741-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-4823-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-10-1335-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-14-2127-2021",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-13-3561-2020",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-16-3581-2023",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.4209/aaqr.210117",
+      "error": "PdfReadError: Cannot find Root object in pdf"
+    }
+  ],
+  "non_claim": "Coverage measures extractor reach, not entity-role accuracy, scientific correctness, or expert validation. No blind record is added to the runtime evidence library."
+}

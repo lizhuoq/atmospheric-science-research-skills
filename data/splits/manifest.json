@@ -1,0 +1,57 @@
+{
+  "schema": "atmospheric-corpus-split/1.0",
+  "seed": "atmospheric-skills-m1-v1",
+  "algorithm": "deterministic hard quotas within publication year, with greedy multi-label balancing over theme and journal",
+  "ratios": {
+    "train": 0.7,
+    "development": 0.15,
+    "blind_test": 0.15
+  },
+  "records": 3000,
+  "counts": {
+    "blind_test": 450,
+    "development": 450,
+    "train": 2100
+  },
+  "leakage_policy": {
+    "train": "rule extraction and examples allowed",
+    "development": "workflow tuning and error analysis only; not rule extraction",
+    "blind_test": "final evaluation only; never inspect full text while authoring rules"
+  },
+  "taxonomy_version": "candidate-keywords/1.0",
+  "topic_counts": {
+    "climate-variability-change": 1538,
+    "dynamics-weather-systems": 1322,
+    "atmospheric-chemistry": 746,
+    "cloud-precipitation-microphysics": 728,
+    "observations-instruments": 726,
+    "aerosols": 723,
+    "air-quality-exposure": 478,
+    "forecasting-predictability": 459,
+    "extremes": 405,
+    "hydrometeorology": 394,
+    "land-atmosphere": 341,
+    "remote-sensing-retrieval": 339,
+    "earth-system-models": 154,
+    "statistics-causal-ml": 142,
+    "quality-control-uncertainty": 136,
+    "ocean-atmosphere": 127,
+    "model-evaluation-downscaling": 96,
+    "atmospheric-radiation": 83,
+    "unclassified": 81,
+    "boundary-layer-turbulence": 78,
+    "numerical-weather-prediction": 67,
+    "paleoclimate": 37,
+    "research-integrity-writing": 1
+  },
+  "method_counts": {
+    "numerical_modeling": 1715,
+    "unspecified": 813,
+    "observation": 664,
+    "remote_sensing": 335,
+    "review_synthesis": 284,
+    "statistical_ml": 122,
+    "reanalysis": 64
+  },
+  "input_sha256": "c53f799a53cd4e74da0594296ff6208db5119af7ec491df4d329d47944b8baa4"
+}

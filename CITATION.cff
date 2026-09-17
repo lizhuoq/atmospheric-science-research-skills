@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the repository and the underlying papers separately."
+title: "Atmospheric Science Research Skills"
+type: software
+version: 0.1.0
+date-released: 2026-09-16
+license: Apache-2.0
+authors:
+  - name: "Atmospheric Science Research Skills contributors"
+repository-code: "https://github.com/lizhuoq/atmospheric-science-research-skills"
+abstract: "Evidence-first, testable agent skills for atmospheric-science research workflows."

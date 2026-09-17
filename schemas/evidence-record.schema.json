@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/evidence-record.schema.json",
+  "title": "Atmospheric Science Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id", "source", "claim", "study_context", "evidence_locator",
+    "applicability", "limitations", "evidence_strength", "conflict_status",
+    "provenance"
+  ],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^ev-[a-z0-9][a-z0-9._-]+$"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doi", "title", "year"],
+      "properties": {
+        "doi": {"type": "string", "pattern": "^(https://doi.org/)?10\\.[0-9]{4,9}/\\S+$"},
+        "title": {"type": "string", "minLength": 3},
+        "year": {"type": "integer", "minimum": 1800, "maximum": 2100},
+        "openalex_id": {"type": ["string", "null"]},
+        "access_class": {"enum": ["open_access", "subscription", "unknown"]}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "claim_type"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 10},
+        "claim_type": {"enum": ["observation", "model_result", "theoretical_inference", "methodological", "dataset_description"]},
+        "variables": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "study_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "spatial_scope", "temporal_scope", "study_design"],
+      "properties": {
+        "domain": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+        "spatial_scope": {"type": "string"},
+        "temporal_scope": {"type": "string"},
+        "atmospheric_scale": {"type": "array", "items": {"enum": ["microscale", "boundary_layer", "mesoscale", "synoptic", "planetary", "climate", "unspecified"]}, "uniqueItems": true},
+        "study_design": {"enum": ["observational", "experimental", "modeling", "theoretical", "review", "mixed"]},
+        "datasets_instruments_models": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "resolution": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidence_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locator_type", "locator"],
+      "properties": {
+        "locator_type": {"enum": ["page", "section", "table", "figure", "supplement", "abstract"]},
+        "locator": {"type": "string", "minLength": 1},
+        "support_kind": {"enum": ["direct", "indirect", "context_only"]},
+        "short_excerpt": {"type": "string", "maxLength": 500}
+      }
+    },
+    "applicability": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "evidence_strength": {"enum": ["low", "moderate", "high", "not_assessed"]},
+    "conflict_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["not_checked", "none_found", "mixed", "contradicted"]},
+        "related_evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "notes": {"type": "string"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["split", "extracted_by", "extracted_at", "review_status"],
+      "properties": {
+        "split": {"enum": ["train", "development", "blind_test"]},
+        "extracted_by": {"type": "string"},
+        "extracted_at": {"type": "string", "format": "date-time"},
+        "review_status": {"enum": ["machine_draft", "human_checked", "expert_checked", "rejected"]},
+        "rule_eligible": {"type": "boolean"}
+      }
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "schema": "atmospheric-skill-runtime/1.0",
+  "records": 3000,
+  "content": "bibliographic metadata and derived labels only; no abstracts, excerpts, full text, local paths, or hashes",
+  "source_index_sha256": "ea61ea53d8cbf2a63564a20311ca3c4dc514687d09d42789481fb003f7d3bcdd",
+  "runtime_index_sha256": "18e2d384c84fa848d324753e4f25ef7fdd35beb292971eed1435c2ed298ae273",
+  "entity_evidence_records": 1551,
+  "entity_evidence_sha256": "5a10e154b3777af55ae5eed668ced2bf8c14a6ef10b4e55a24c901d4f6668668",
+  "method_rules": 10,
+  "method_rules_sha256": "b4c6203c34d1021e239c4ad21b14aeb6e279dbeb4299a7b021c96c526d331d38",
+  "private_build_corpus_required_at_runtime": false,
+  "offline_demo_available": true,
+  "network_or_user_provided_papers_required_for_new_topic_review": true,
+  "bundled_index_role": "optional example, terminology seed, and regression-test fixture; not a closed-world knowledge base"
+}

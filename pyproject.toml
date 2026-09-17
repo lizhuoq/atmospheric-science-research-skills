@@ -1,0 +1,10 @@
+[project]
+name = "atmospheric-science-research-skills"
+version = "0.1.0"
+description = "Evidence-first agent skills for atmospheric-science research"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

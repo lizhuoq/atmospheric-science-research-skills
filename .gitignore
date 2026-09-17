@@ -1,0 +1,55 @@
+# Copyrighted/local paper content and derivatives that may reconstruct it.
+data/papers/
+data/extracted/
+data/cache/
+data/raw/
+data/queues/
+data/downloads/
+data/logs/
+# Per-journal ledgers duplicate the consolidated public metadata table.
+data/metadata/[0-9][0-9].csv
+*.pdf
+*.pdf.part
+*.tei.xml
+*.grobid.xml
+*.fulltext.*
+
+# Local environments and tooling caches.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+tmp/
+temp/
+build/
+dist/
+*.egg-info/
+
+# Local secrets, credentials, and machine-specific configuration.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+.netrc
+
+# Local agent installations and session state are not source artifacts.
+.agents/
+.claude/
+.codex/
+.copilot/
+
+# OS/editor files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+desktop.ini

@@ -1,0 +1,91 @@
+{
+  "schema": "atmospheric-skill-behavioral-eval/1.0",
+  "generated_at_utc": "2026-09-17T05:48:11.775796+00:00",
+  "cases": 9,
+  "passed": 9,
+  "failed": 0,
+  "scope": "deterministic policy-decision coverage; not an LLM accuracy or expert scientific evaluation",
+  "results": [
+    {
+      "id": "normal-evidence-synthesis",
+      "category": "normal",
+      "passed": true,
+      "required": 4,
+      "satisfied": 4,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "incomplete-input",
+      "category": "incomplete_input",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "cross-subfield",
+      "category": "cross_subfield",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "conflicting-studies",
+      "category": "conflict",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "invalid-doi",
+      "category": "invalid_source",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "causal-overreach",
+      "category": "causal_overreach",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "unit-time-mismatch",
+      "category": "incompatible_measurement",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "copyright-long-text",
+      "category": "copyright",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    },
+    {
+      "id": "citation-hallucination",
+      "category": "citation_hallucination",
+      "passed": true,
+      "required": 3,
+      "satisfied": 3,
+      "missing": [],
+      "review_status": "machine_evaluated"
+    }
+  ]
+}

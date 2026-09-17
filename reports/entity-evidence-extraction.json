@@ -1,0 +1,149 @@
+{
+  "schema": "entity-evidence-extraction/1.0",
+  "training_pdfs_attempted": 746,
+  "records": 1551,
+  "errors": [
+    {
+      "doi": "https://doi.org/10.5194/acp-18-339-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/acp-17-807-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/acp-19-7859-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.1029/2022ef002682",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-13-1129-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-17-63-2021",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-16-117-2020",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-16-1493-2020",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-14-1805-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-13-919-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-13-613-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-13-1919-2017",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/cp-15-1691-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.1002/qj.3858",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.1007/s10546-016-0217-y",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-291-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-6539-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-14-4617-2021",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-5673-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-6651-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-9-5385-2016",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-1921-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-12-3435-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-12-2241-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-9-3939-2016",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-1233-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-9-4425-2016",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-11-2395-2018",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-12-2403-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/amt-9-3769-2016",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/gmd-13-3571-2020",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/gmd-13-5425-2020",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.5194/gmd-12-1443-2019",
+      "error": "PdfStreamError: Stream has ended unexpectedly"
+    },
+    {
+      "doi": "https://doi.org/10.1002/asl.694",
+      "error": "PdfReadError: Invalid object in /Pages"
+    },
+    {
+      "doi": "https://doi.org/10.1002/joc.6771",
+      "error": "PdfReadError: Cannot find Root object in pdf"
+    }
+  ],
+  "max_pages": 20,
+  "runtime_pdf_dependency": false
+}

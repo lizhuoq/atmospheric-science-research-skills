@@ -1,0 +1,112 @@
+[
+  {
+    "rule_id": "rule-preserve-variable-semantics",
+    "statement": "Before combining atmospheric data, reconcile variable definition, physical units, coordinates, calendar, time reference, sign convention, support, and aggregation interval.",
+    "category": "comparability",
+    "applies_when": ["combining, comparing, regridding, or validating atmospheric variables"],
+    "does_not_apply_when": ["the operation is only bibliographic discovery and makes no data comparison"],
+    "strength": "normative",
+    "sources": [{"doi": null, "url": "https://cfconventions.org/cf-conventions/cf-conventions.html", "title": "NetCDF Climate and Forecast Metadata Conventions", "year": 2026, "locator": "Sections 3-4: units and coordinate systems", "source_type": "authoritative_standard"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-time-calendar-explicit",
+    "statement": "A time coordinate comparison must preserve the reference datetime, calendar, time zone or UTC basis, and whether values are instantaneous, averaged, or accumulated.",
+    "category": "time",
+    "applies_when": ["comparing observations, forecasts, model output, climatologies, or anomalies across time"],
+    "does_not_apply_when": ["time is not part of the claim or computation"],
+    "strength": "normative",
+    "sources": [{"doi": null, "url": "https://cfconventions.org/cf-conventions/cf-conventions.html", "title": "NetCDF Climate and Forecast Metadata Conventions", "year": 2026, "locator": "Section 4.4: Time coordinate", "source_type": "authoritative_standard"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-retrieval-not-direct-measurement",
+    "statement": "A remotely retrieved geophysical variable must be described separately from the instrument signal and must carry retrieval assumptions, priors, ancillary inputs, sensitivity, and quality screening.",
+    "category": "remote-sensing",
+    "applies_when": ["interpreting satellite, radar, lidar, or radiometer retrieval products"],
+    "does_not_apply_when": ["the claim concerns only a directly calibrated detector-level signal"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://ceos.org/ourwork/workinggroups/wgcv/", "title": "CEOS Working Group on Calibration and Validation guidance", "year": 2026, "locator": "Calibration and validation principles", "source_type": "official_guidance"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-reference-has-uncertainty",
+    "statement": "Validation must not treat the reference dataset or instrument as error-free; its uncertainty, representativeness, support, and shared inputs must be included in interpretation.",
+    "category": "validation",
+    "applies_when": ["validating a model, forecast, retrieval, or instrument against reference data"],
+    "does_not_apply_when": ["the comparison is explicitly a difference assessment with no truth claim"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://ceos.org/ourwork/workinggroups/wgcv/", "title": "CEOS Working Group on Calibration and Validation guidance", "year": 2026, "locator": "Validation and reference measurement principles", "source_type": "official_guidance"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-forecast-baseline-named",
+    "statement": "A forecast skill or improvement claim must name the forecast object, verification sample, metric orientation, baseline, and uncertainty.",
+    "category": "forecast-verification",
+    "applies_when": ["claiming forecast, hindcast, or ensemble performance or improvement"],
+    "does_not_apply_when": ["reporting an unscored qualitative forecast discussion"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://wmo.int/media/news/wmo-issues-guidelines-verification-of-hydrological-forecasts", "title": "WMO Guidelines on the Verification of Hydrological Forecasts (WMO-No. 1364)", "year": 2025, "locator": "Forecast verification framework and methods", "source_type": "official_guidance"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-ensemble-dependence",
+    "statement": "Ensemble members, related models, overlapping forecast windows, repeated stations, and spatial samples must not be treated as independent without a defensible dependence model.",
+    "category": "statistics",
+    "applies_when": ["estimating uncertainty or significance from ensembles or repeated atmospheric samples"],
+    "does_not_apply_when": ["dependence is irrelevant to the descriptive quantity and no inferential claim is made"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://wmo.int/files/cst-climate-prediction", "title": "WMO Climate Prediction guidance", "year": 2023, "locator": "Forecast verification and uncertainty guidance", "source_type": "official_guidance"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-correlation-not-causation",
+    "statement": "An association or predictive relationship does not establish a causal effect without an explicit estimand, identification assumptions, confounder strategy, and sensitivity analysis.",
+    "category": "causal-inference",
+    "applies_when": ["language implies that an exposure, forcing, intervention, or process caused an outcome"],
+    "does_not_apply_when": ["the statement is explicitly descriptive or predictive and avoids causal interpretation"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/", "title": "IPCC AR6 WGI Chapter 1: Framing, Context, and Methods", "year": 2021, "locator": "Section 1.4: construction and assessment of knowledge", "source_type": "authoritative_standard"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-model-configuration-complete",
+    "statement": "A model comparison must report version, grid and effective resolution, vertical coordinate, forcing, initialization, boundary conditions, parameterizations, ensemble design, post-processing, and verification data when relevant.",
+    "category": "modeling",
+    "applies_when": ["interpreting or comparing numerical weather, chemistry, climate, or Earth-system simulations"],
+    "does_not_apply_when": ["the model is mentioned only as background and no result depends on its configuration"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": "10.5194/gmd-13-1179-2020", "url": "https://doi.org/10.5194/gmd-13-1179-2020", "title": "Earth System Model Evaluation Tool (ESMValTool) v2.0 – technical overview", "year": 2020, "locator": "Technical overview and provenance framework", "source_type": "peer_reviewed"}],
+    "conflict_status": "not_checked",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-data-provenance-reusable",
+    "statement": "Research data, code, and workflows should use persistent identifiers, rich metadata, qualified links, licenses, provenance, and domain standards sufficient for discovery and reuse.",
+    "category": "reproducibility",
+    "applies_when": ["publishing or documenting data, code, models, or analysis workflows"],
+    "does_not_apply_when": ["legal, ethical, or security constraints require controlled access; metadata and provenance should still be preserved where possible"],
+    "strength": "normative",
+    "sources": [{"doi": "10.1038/sdata.2016.18", "url": "https://doi.org/10.1038/sdata.2016.18", "title": "The FAIR Guiding Principles for scientific data management and stewardship", "year": 2016, "locator": "Box 2: FAIR Guiding Principles", "source_type": "peer_reviewed"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  },
+  {
+    "rule_id": "rule-claim-scope-bounded",
+    "statement": "A conclusion must remain bounded by the sampled region, period, atmospheric regime, scale, study design, data coverage, and quantified uncertainty.",
+    "category": "inference",
+    "applies_when": ["generalizing a study result beyond its direct sample"],
+    "does_not_apply_when": ["the conclusion exactly describes the observed sample without extrapolation"],
+    "strength": "strong_consensus",
+    "sources": [{"doi": null, "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/", "title": "IPCC AR6 WGI Chapter 1: Framing, Context, and Methods", "year": 2021, "locator": "Uncertainty and calibrated assessment language", "source_type": "authoritative_standard"}],
+    "conflict_status": "none_found",
+    "review_status": "machine_draft"
+  }
+]
