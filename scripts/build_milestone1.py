@@ -149,7 +149,11 @@ def build() -> tuple[list[dict], dict]:
         "taxonomy_version": "candidate-keywords/1.0",
         "topic_counts": dict(topic_counts.most_common()),
         "method_counts": dict(method_counts.most_common()),
-        "input_sha256": hashlib.sha256(MASTER.read_bytes()).hexdigest(),
+        # Hash canonical UTF-8 text so Windows CRLF and Linux LF checkouts
+        # produce the same reproducibility manifest.
+        "input_sha256": hashlib.sha256(
+            MASTER.read_text(encoding="utf-8").replace("\r\n", "\n").encode("utf-8")
+        ).hexdigest(),
     }
     return records, manifest
 
