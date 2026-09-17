@@ -15,6 +15,12 @@ INDEX = SKILL / "references" / "corpus-index.csv"
 MANIFEST = SKILL / "references" / "runtime-manifest.json"
 
 
+def canonical_text_sha256(path: Path) -> str:
+    """Hash logical UTF-8 text independently of checkout line endings."""
+    content = path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    return hashlib.sha256(content.encode("utf-8")).hexdigest()
+
+
 def build() -> tuple[str, str]:
     with SPLITS.open(encoding="utf-8-sig", newline="") as f:
         split = {r["doi"].lower().removeprefix("https://doi.org/"): r["split"] for r in csv.DictReader(f)}
@@ -35,12 +41,12 @@ def build() -> tuple[str, str]:
         "schema": "atmospheric-skill-runtime/1.0",
         "records": len(rows),
         "content": "bibliographic metadata and derived labels only; no abstracts, excerpts, full text, local paths, or hashes",
-        "source_index_sha256": hashlib.sha256(TOPICS.read_bytes()).hexdigest(),
+        "source_index_sha256": canonical_text_sha256(TOPICS),
         "runtime_index_sha256": hashlib.sha256(content.encode()).hexdigest(),
         "entity_evidence_records": sum(1 for line in entity_path.read_text(encoding="utf-8").splitlines() if line.strip()) if entity_path.exists() else 0,
-        "entity_evidence_sha256": hashlib.sha256(entity_path.read_bytes()).hexdigest() if entity_path.exists() else None,
+        "entity_evidence_sha256": canonical_text_sha256(entity_path) if entity_path.exists() else None,
         "method_rules": len(json.loads(rules_path.read_text(encoding="utf-8"))) if rules_path.exists() else 0,
-        "method_rules_sha256": hashlib.sha256(rules_path.read_bytes()).hexdigest() if rules_path.exists() else None,
+        "method_rules_sha256": canonical_text_sha256(rules_path) if rules_path.exists() else None,
         "private_build_corpus_required_at_runtime": False,
         "offline_demo_available": True,
         "network_or_user_provided_papers_required_for_new_topic_review": True,
